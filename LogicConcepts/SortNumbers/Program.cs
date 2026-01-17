@@ -10,37 +10,42 @@ do
         var number2 = ConsoleExtension.GetInt("Ingrese el segundo número: ");
         var number3 = ConsoleExtension.GetInt("Ingrese el tercer número : ");
 
+        if (number1 == number2 || number1 == number3 || number2 == number3)
+        {
+            throw new Exception("Los números deben ser diferentes entre sí.");
+        }
+
         if (number1 > number2 && number1 > number3)
         {
             if (number2 > number3)
             {
-                Console.WriteLine($"Orden: {number1}, {number2}, {number3}");
+                Console.WriteLine($"El mayor es {number1}, el medio es {number2}, el menor es {number3}");
             }
             else
             {
-                Console.WriteLine($"Orden: {number1}, {number3}, {number2}");
+                Console.WriteLine($"El mayor es {number1}, el medio es {number3}, el menor es {number2}");
             }
         }
         else if (number2 > number1 && number2 > number3)
         {
             if (number1 > number3)
             {
-                Console.WriteLine($"Orden: {number2}, {number1}, {number3}");
+                Console.WriteLine($"El mayor es {number2}, el medio es {number1}, el menor es {number3}");
             }
             else
             {
-                Console.WriteLine($"Orden: {number2}, {number3}, {number1}");
+                Console.WriteLine($"El mayor es {number2}, el medio es {number3}, el menor es {number1}");
             }
         }
         else
         {
             if (number1 > number2)
             {
-                Console.WriteLine($"Orden: {number3}, {number1}, {number2}");
+                Console.WriteLine($"El mayor es {number3}, el medio es {number1}, el menor es {number2}");
             }
             else
             {
-                Console.WriteLine($"Orden: {number3}, {number2}, {number1}");
+                Console.WriteLine($"El mayor es {number3} , el medio es  {number2} , el menor es {number1}");
             }
         }
     }
