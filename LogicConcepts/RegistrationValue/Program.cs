@@ -27,6 +27,7 @@ do
         answer = ConsoleExtension.GetValidOptions("¿Desea continuar [S]í, [N]o?: ", options);
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+Console.WriteLine("::::: GAME OVER :::::");
 
 decimal CalculateSubsidy(int stratum)
 {
@@ -67,5 +68,3 @@ decimal CalculateRegistrationValue(int credits, decimal creditValue, int stratum
     }
     return value;
 }
-
-Console.WriteLine("::::: GAME OVER :::::");
