@@ -2,7 +2,9 @@
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
+Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::");
 Console.WriteLine("::::: EJERCICIO ENVÍO DE MERCANCIAS :::::");
+Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::");
 do
 {
     try
@@ -42,7 +44,7 @@ do
 
     do
     {
-        answer = ConsoleExtension.GetValidOptions("¿Desea continuar [S]í, [N]o?: ", options);
+        answer = ConsoleExtension.GetValidOptions("¿Desea continuar [S]í, [N]o?......: ", options);
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
 Console.WriteLine("::::: GAME OVER :::::");
@@ -95,10 +97,6 @@ decimal CalculateFare(float weigth)
     {
         return 30000m;
     }
-    if (weigth > 200)
-    {
-        return 35000m;
-    }
     int aditional = ((int)weigth - 200) / 10;
-    return 35000m + (aditional * 2000);
+    return 35000m + aditional * 2000;
 }
