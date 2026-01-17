@@ -1,23 +1,27 @@
 ﻿using Shared;
 
-var answer = string.Empty;
-var options = new List<string> { "s", "n" };
+var response = string.Empty;
 
 do
 {
-    var number = ConsoleExtension.GetInt("Ingrese un número entero: ");
-    if (number % 2 == 0)
+    try
     {
-        Console.WriteLine($"El número {number}, es par.");
+        var number = ConsoleExtension.GetInt("Ingrese un número entero: ");
+        if (number % 2 == 0)
+        {
+            Console.WriteLine($"El número {number}, es par.");
+        }
+        else
+        {
+            Console.WriteLine($"El número {number}, es impar.");
+        }
     }
-    else
+    catch (Exception ex)
     {
-        Console.WriteLine($"El número {number}, es impar.");
+        Console.WriteLine(ex.Message);
     }
 
-    do
-    {
-        answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
-    } while (options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
-} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+    Console.Write("Deseas continuar [S/N]? :");
+    response = Console.ReadLine()!.ToUpper();
+} while (response == "S");
 Console.WriteLine("::::: GAME OVER :::::");

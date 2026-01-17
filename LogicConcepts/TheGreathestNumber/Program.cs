@@ -1,31 +1,38 @@
 ﻿using Shared;
 
-var answer = string.Empty;
-var options = new List<string> { "s", "n" };
+var response = string.Empty;
 
 do
 {
-    Console.WriteLine("::: Encontrar el número mayor entre tres números diferentes :::");
-    var a = ConsoleExtension.GetInt("Ingrese el primer número: ");
-    var b = ConsoleExtension.GetInt("Ingrese el segundo número: ");
-    var c = ConsoleExtension.GetInt("Ingrese el tercer número: ");
+    try
+    {
+        var number1 = ConsoleExtension.GetInt("Ingrese el primer número: ");
+        var number2 = ConsoleExtension.GetInt("Ingrese el segundo número: ");
+        var number3 = ConsoleExtension.GetInt("Ingrese el tercer número: ");
 
-    if (a > b && a > c)
-    {
-        Console.WriteLine($"El número mayor es: {a}");
+        if (number1 > number2 && number1 > number3)
+        {
+            Console.WriteLine($"El número mayor es: {number1}");
+        }
+        else if (number2 > number1 && number2 > number3)
+        {
+            Console.WriteLine($"El número mayor es: {number2}");
+        }
+        else if (number3 > number1 && number3 > number2)
+        {
+            Console.WriteLine($"El número mayor es: {number3}");
+        }
+        else
+        {
+            Console.WriteLine("Los números son iguales o no se puede determinar un único mayor.");
+        }
     }
-    else if (b > a && b > c)
+    catch (Exception ex)
     {
-        Console.WriteLine($"El número mayor es: {b}");
-    }
-    else
-    {
-        Console.WriteLine($"El número mayor es: {c}");
+        Console.WriteLine(ex.Message);
     }
 
-    do
-    {
-        answer = ConsoleExtension.GetValidOptions("¿Deseas continuar [S]í, [N]o?: ", options);
-    } while (options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
-} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+    Console.Write("Deseas continuar [S/N]? :");
+    response = Console.ReadLine()!.ToUpper();
+} while (response == "S");
 Console.WriteLine("::::: GAME OVER :::::");
