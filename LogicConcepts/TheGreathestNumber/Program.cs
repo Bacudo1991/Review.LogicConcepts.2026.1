@@ -12,15 +12,15 @@ do
 
         if (number1 > number2 && number1 > number3)
         {
-            Console.WriteLine($"El número mayor es: {number1}");
+            Console.WriteLine($"El número mayor es: {number1}.");
         }
         else if (number2 > number1 && number2 > number3)
         {
-            Console.WriteLine($"El número mayor es: {number2}");
+            Console.WriteLine($"El número mayor es: {number2}.");
         }
         else if (number3 > number1 && number3 > number2)
         {
-            Console.WriteLine($"El número mayor es: {number3}");
+            Console.WriteLine($"El número mayor es: {number3}.");
         }
         else
         {
