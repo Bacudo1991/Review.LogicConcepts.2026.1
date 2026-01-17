@@ -7,7 +7,7 @@ do
 {
     try
     {
-        var number = ConsoleExtension.GetInt("Ingrese un número entero: ");
+        var number = ConsoleExtension.GetInt("Ingrese un número entero....: ");
         if (number % 2 == 0)
         {
             Console.WriteLine($"El número {number}, es par.");
