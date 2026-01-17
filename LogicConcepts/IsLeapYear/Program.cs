@@ -2,7 +2,9 @@
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
+Console.WriteLine(":::::::::::::::::::::::::::::::::::::");
 Console.WriteLine("::::: EJERCICIO DE AÑO BISIESTO :::::");
+Console.WriteLine(":::::::::::::::::::::::::::::::::::::");
 do
 {
     var currentYear = DateTime.Now.Year;
@@ -10,7 +12,7 @@ do
     var year = 0;
     try
     {
-        year = ConsoleExtension.GetInt("Ingrese el año: ");
+        year = ConsoleExtension.GetInt("Ingrese el año..............: ");
         if (year == currentYear)
         {
             message = "es";
