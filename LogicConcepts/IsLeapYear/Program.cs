@@ -35,7 +35,7 @@ do
     }
     catch (Exception)
     {
-        Console.WriteLine($"{year} no es un año valido.");
+        Console.WriteLine($"Lo que ingresaste no es un año valido.");
     }
 
     do
