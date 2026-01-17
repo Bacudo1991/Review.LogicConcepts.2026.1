@@ -2,14 +2,16 @@
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
+Console.WriteLine("::::::::::::::::::::::::::::::::::::::");
 Console.WriteLine("::::: EJERCICIO DEL NÚMERO MAYOR :::::");
+Console.WriteLine("::::::::::::::::::::::::::::::::::::::");
 do
 {
     try
     {
-        var number1 = ConsoleExtension.GetInt("Ingrese el primer número : ");
-        var number2 = ConsoleExtension.GetInt("Ingrese el segundo número: ");
-        var number3 = ConsoleExtension.GetInt("Ingrese el tercer número : ");
+        var number1 = ConsoleExtension.GetInt("Ingrese el primer número....: ");
+        var number2 = ConsoleExtension.GetInt("Ingrese el segundo número...: ");
+        var number3 = ConsoleExtension.GetInt("Ingrese el tercer número....: ");
 
         if (number1 > number2 && number1 > number3)
         {
