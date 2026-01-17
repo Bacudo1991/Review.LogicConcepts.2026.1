@@ -1,6 +1,7 @@
 ﻿using Shared;
 
-var response = string.Empty;
+var answer = string.Empty;
+var options = new List<string> { "s", "n" };
 Console.WriteLine("::::: EJERCICIO DE AÑO BISIESTO :::::");
 do
 {
@@ -37,7 +38,9 @@ do
         Console.WriteLine($"{year} no es un año valido.");
     }
 
-    Console.Write("Deseas continuar [S/N]? :");
-    response = Console.ReadLine()!.ToUpper();
-} while (response == "S");
+    do
+    {
+        answer = ConsoleExtension.GetValidOptions("¿Desea continuar [S]í, [N]o?: ", options);
+    } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
+} while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
 Console.WriteLine("::::: GAME OVER :::::");
