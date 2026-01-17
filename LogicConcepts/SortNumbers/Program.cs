@@ -12,7 +12,8 @@ do
 
         if (number1 == number2 || number1 == number3 || number2 == number3)
         {
-            throw new Exception("Los números deben ser diferentes entre sí.");
+            Console.WriteLine("Los números deben ser diferentes entre sí, Intente de nuevo.");
+            continue;
         }
 
         if (number1 > number2 && number1 > number3)
