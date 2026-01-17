@@ -21,7 +21,7 @@ do
         Console.WriteLine(ex.Message);
     }
 
-    Console.Write("Deseas continuar [S/N]? :");
+    Console.Write("Deseas continuar [S/N]? : ");
     response = Console.ReadLine()!.ToUpper();
 } while (response == "S");
 Console.WriteLine("::::: GAME OVER :::::");
