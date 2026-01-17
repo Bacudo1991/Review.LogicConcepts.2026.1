@@ -16,12 +16,12 @@ do
         if (salary < minimumSalary)
         {
             Console.WriteLine($"Nombre.................................: {name}");
-            Console.WriteLine($"Salario................................: {minimumSalary:C2}");
+            Console.WriteLine($"Salario................................: {minimumSalary,20:C2}");
         }
         else
         {
             Console.WriteLine($"Nombre.................................: {name}");
-            Console.WriteLine($"Salario................................: {salary:C2}");
+            Console.WriteLine($"Salario................................: {salary,20:C2}");
         }
     }
     catch (Exception ex)
@@ -31,7 +31,7 @@ do
 
     do
     {
-        answer = ConsoleExtension.GetValidOptions("¿Desea continuar [S]í, [N]o?: ", options);
+        answer = ConsoleExtension.GetValidOptions("¿Desea continuar [S]í, [N]o?...........: ", options);
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
 Console.WriteLine("::::: GAME OVER :::::");
