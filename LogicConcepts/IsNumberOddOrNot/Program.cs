@@ -2,7 +2,9 @@
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
+Console.WriteLine("::::::::::::::::::::::::::::::::::::::::::::::::");
 Console.WriteLine("::::: EJERCICIO DE NÚMEROS PARES E IMPARES :::::");
+Console.WriteLine("::::::::::::::::::::::::::::::::::::::::::::::::");
 do
 {
     try
