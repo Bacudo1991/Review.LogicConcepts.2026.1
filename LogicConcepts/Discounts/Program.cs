@@ -21,6 +21,7 @@ do
         answer = ConsoleExtension.GetValidOptions("¿Desea continuar [S]í, [N]o?: ", options);
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+Console.WriteLine("::::: GAME OVER :::::");
 
 decimal CalculateValue(int desks)
 {
@@ -40,5 +41,3 @@ decimal CalculateValue(int desks)
 
     return desks * 650000M * (decimal)(1 - discount);
 }
-
-Console.WriteLine("::::: GAME OVER :::::");
