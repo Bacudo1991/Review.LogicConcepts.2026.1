@@ -7,12 +7,15 @@ do
 {
     try
     {
-        var credits = ConsoleExtension.GetInt("Número de créditos.....: ");
-        var creditValue = ConsoleExtension.GetDecimal("Valor por crédito......: ");
-        var stratum = ConsoleExtension.GetInt("Estrato del estudiante.: ");
+        var credits = ConsoleExtension.GetInt("Número de créditos...............: ");
+        var creditValue = ConsoleExtension.GetDecimal("Valor por crédito................: ");
+        var stratum = ConsoleExtension.GetInt("Estrato del estudiante...........: ");
 
         var registrationValue = CalculateRegistrationValue(credits, creditValue, stratum);
         var subsidy = CalculateSubsidy(stratum);
+
+        Console.WriteLine($"Costo de la matrícula............: {registrationValue,20:C2}");
+        Console.WriteLine($"Valor del subsidio...............: {subsidy,20:C2}");
     }
     catch (Exception ex)
     {
