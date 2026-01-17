@@ -2,13 +2,15 @@
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
+Console.WriteLine("::::::::::::::::::::::::::::::::::");
 Console.WriteLine("::::: EJERCICIO DE MÚLTIPLOS :::::");
+Console.WriteLine("::::::::::::::::::::::::::::::::::");
 do
 {
     try
     {
-        var number1 = ConsoleExtension.GetInt("Ingrese el primer número : ");
-        var number2 = ConsoleExtension.GetInt("Ingrese el segundo número: ");
+        var number1 = ConsoleExtension.GetInt("Ingrese el primer número....: ");
+        var number2 = ConsoleExtension.GetInt("Ingrese el segundo número...: ");
         if (number2 % number1 == 0)
         {
             Console.WriteLine($"{number1} es múltiplo de {number2}");
