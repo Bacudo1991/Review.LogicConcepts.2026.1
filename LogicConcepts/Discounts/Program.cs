@@ -2,14 +2,16 @@
 
 var answer = string.Empty;
 var options = new List<string> { "s", "n" };
+Console.WriteLine(":::::::::::::::::::::::::::::::::::");
 Console.WriteLine("::::: EJERCICIO DE DESCUENTOS :::::");
+Console.WriteLine(":::::::::::::::::::::::::::::::::::");
 do
 {
     try
     {
-        var desks = ConsoleExtension.GetInt("Número de escritorios: ");
+        var desks = ConsoleExtension.GetInt("Número de escritorios.......: ");
         var valueToPay = CalculateValue(desks);
-        Console.WriteLine($"El valor a pagar es..: {valueToPay:C2} ");
+        Console.WriteLine($"El valor a pagar es.........: {valueToPay,20:C2} ");
     }
     catch (Exception ex)
     {
