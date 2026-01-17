@@ -6,6 +6,7 @@ do
 {
     try
     {
+        Console.WriteLine("::::: EJERCICIO DE NÚMEROS PARES E IMPARES :::::");
         var number = ConsoleExtension.GetInt("Ingrese un número entero: ");
         if (number % 2 == 0)
         {
