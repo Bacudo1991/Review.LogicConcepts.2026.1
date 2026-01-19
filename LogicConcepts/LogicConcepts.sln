@@ -47,6 +47,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "10", "10", "{ABB48DAA-C0C6-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SucesoStore", "SucesoStore\SucesoStore.csproj", "{EFE19F2E-4F8D-4B89-AA81-19D22A9AD77F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "11", "11", "{410ECEFB-AB86-4BA6-B71A-D4E226EDBAE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportationCompany", "TransportationCompany\TransportationCompany.csproj", "{CEE398E3-620D-4DE0-A9CB-3F11F1DB7C2E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -97,6 +101,10 @@ Global
 		{EFE19F2E-4F8D-4B89-AA81-19D22A9AD77F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFE19F2E-4F8D-4B89-AA81-19D22A9AD77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFE19F2E-4F8D-4B89-AA81-19D22A9AD77F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE398E3-620D-4DE0-A9CB-3F11F1DB7C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE398E3-620D-4DE0-A9CB-3F11F1DB7C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE398E3-620D-4DE0-A9CB-3F11F1DB7C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE398E3-620D-4DE0-A9CB-3F11F1DB7C2E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -113,6 +121,7 @@ Global
 		{D0DB6528-4938-4611-9BB2-04F595FBB711} = {653510DA-018F-4ABD-A6E3-B5E398CCD7DF}
 		{EEBD6BF5-47E6-4963-BD01-CDEE3F7231FF} = {DB316D70-C9E2-4A83-A244-600570585E99}
 		{EFE19F2E-4F8D-4B89-AA81-19D22A9AD77F} = {ABB48DAA-C0C6-4340-B779-D97A368F95C3}
+		{CEE398E3-620D-4DE0-A9CB-3F11F1DB7C2E} = {410ECEFB-AB86-4BA6-B71A-D4E226EDBAE7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5053EE1A-4015-4FBD-91BB-0EE1738DA305}
