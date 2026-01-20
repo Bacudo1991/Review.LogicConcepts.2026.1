@@ -35,6 +35,7 @@ do
         Console.WriteLine();
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
+Console.WriteLine("::::: GAME OVER :::::");
 
 double CalculatePi(int n)
 {
@@ -50,5 +51,3 @@ double CalculatePi(int n)
     }
     return sum * 4;
 }
-
-Console.WriteLine("::::: GAME OVER :::::");
