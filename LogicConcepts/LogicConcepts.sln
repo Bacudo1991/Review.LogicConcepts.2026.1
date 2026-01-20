@@ -67,6 +67,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "15", "15", "{ED3A7E82-0B14-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaylorModified", "TaylorModified\TaylorModified.csproj", "{BA68042C-3CA7-4AF6-B343-6F7B4836B399}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "16", "16", "{9C9EE1F5-F2CA-4811-9A44-0194B9BA4213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuadraticEcuations", "QuadraticEcuations\QuadraticEcuations.csproj", "{83381583-F5D4-4AA1-BB45-73F329F9EB07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,6 +141,10 @@ Global
 		{BA68042C-3CA7-4AF6-B343-6F7B4836B399}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA68042C-3CA7-4AF6-B343-6F7B4836B399}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA68042C-3CA7-4AF6-B343-6F7B4836B399}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83381583-F5D4-4AA1-BB45-73F329F9EB07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83381583-F5D4-4AA1-BB45-73F329F9EB07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83381583-F5D4-4AA1-BB45-73F329F9EB07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83381583-F5D4-4AA1-BB45-73F329F9EB07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -159,6 +167,7 @@ Global
 		{2C59FC64-CACE-4A8E-ADCA-5ECC1DAF914F} = {79A9A4D4-D8A0-4620-B4C8-4D19D21BC41B}
 		{612BE840-FC20-4FD0-B5FD-F3296BB9B239} = {CFD99DE8-4721-4B50-B046-65EA55FCB094}
 		{BA68042C-3CA7-4AF6-B343-6F7B4836B399} = {ED3A7E82-0B14-4809-B779-295D1CA8230B}
+		{83381583-F5D4-4AA1-BB45-73F329F9EB07} = {9C9EE1F5-F2CA-4811-9A44-0194B9BA4213}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5053EE1A-4015-4FBD-91BB-0EE1738DA305}
