@@ -26,14 +26,8 @@ do
             message = "fue ";
         }
 
-        if (year % 4 == 0 && (year % 100 != 0 || year % 400 == 0))
-        {
-            Console.WriteLine($"El año {year} sí {message} bisiesto.");
-        }
-        else
-        {
-            Console.WriteLine($"El año {year} no {message} bisiesto.");
-        }
+        var isLeapYear = DateUtilities.IsLeapYear(year);
+        Console.WriteLine($"El año {year}, {(isLeapYear ? "SI" : "NO")} {message} bisiesto");
     }
     catch (Exception)
     {
