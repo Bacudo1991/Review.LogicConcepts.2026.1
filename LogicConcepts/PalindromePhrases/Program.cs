@@ -12,13 +12,17 @@ do
         Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::");
         Console.WriteLine("::::::::: EJERCICIO DE FRASES PALINDROMAS :::::::::");
         Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::");
-        var n = ConsoleExtension.GetInt("Cuantas posiciones quieres en el arreglo: ");
+        var phrase = ConsoleExtension.GetString("Ingrese la palabra o frase: ");
 
-        Console.BackgroundColor = ConsoleColor.DarkBlue;
-        Console.ForegroundColor = ConsoleColor.White;
+        var isPalindrome = IsPaliandrome(phrase);
 
-        Console.BackgroundColor = ConsoleColor.Blue;
-        Console.ForegroundColor = ConsoleColor.White;
+        Console.BackgroundColor = ConsoleColor.Red;
+        Console.ForegroundColor = ConsoleColor.Black;
+
+        Console.WriteLine($"La palabra o frase: '{phrase}' {(isPalindrome ? "Sí" : "No")} es palíndrome.");
+
+        Console.BackgroundColor = ConsoleColor.Black;
+        Console.ForegroundColor = ConsoleColor.Blue;
     }
     catch (Exception ex)
     {
@@ -32,3 +36,33 @@ do
     } while (!options.Any(x => x.Equals(answer, StringComparison.CurrentCultureIgnoreCase)));
 } while (answer!.Equals("s", StringComparison.CurrentCultureIgnoreCase));
 Console.WriteLine("::::: GAME OVER :::::");
+
+bool IsPaliandrome(string? phrase)
+{
+    phrase = PreparePhrase(phrase);
+    var n = phrase!.Length;
+    for (var i = 0; i < n / 2; i++)
+    {
+        if (phrase[i] != phrase[n - i - 1])
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+string? PreparePhrase(string? phrase)
+{
+    phrase = phrase!.ToLower();
+    var newPhrase = string.Empty;
+    var exceptions = new List<char> { ' ', ',', '.', '!', '¡', '¿', '?', ':', ';' };
+
+    foreach (var character in phrase)
+    {
+        if (!exceptions.Contains(character))
+        {
+            newPhrase += character;
+        }
+    }
+    return newPhrase;
+}
