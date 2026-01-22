@@ -64,5 +64,12 @@ string? PreparePhrase(string? phrase)
             newPhrase += character;
         }
     }
+
+    newPhrase = newPhrase.Replace("á", "a")
+                         .Replace("é", "e")
+                         .Replace("í", "i")
+                         .Replace("ó", "o")
+                         .Replace("ú", "u")
+                         .Replace("ü", "u");
     return newPhrase;
 }
